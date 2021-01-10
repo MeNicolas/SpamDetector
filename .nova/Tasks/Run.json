@@ -1,0 +1,10 @@
+{
+  "actions" : {
+    "run" : {
+      "enabled" : true,
+      "script" : "python3 main.py"
+    }
+  },
+  "identifier" : "42541A35-5F09-4486-BAB4-0003A43A2BCD",
+  "openLogOnRun" : "start"
+}
