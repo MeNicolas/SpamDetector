@@ -24,13 +24,11 @@ def api():
 	return {'spam': prediction}
 		
 import joblib
-model = joblib.load('randomforest.pkl')
-xgb = joblib.load('xgb.pkl')
+model = joblib.load('catboost.pkl')
 	
 def predict(mail):
 	x = analyze_mail(mail)
-	print(len(x))
-	return bool(model.predict([x])[0])
+	return bool(model.predict(x))
 
 def word_freq(mail, word):
 	words = mail.split(' ')
